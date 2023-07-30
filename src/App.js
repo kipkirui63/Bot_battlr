@@ -55,3 +55,13 @@ const App = () => {
       .catch((error) => console.error('Error deleting the bot:', error));
   };
 
+  const removeBotFromCollection = (botId) => {
+    const updatedBots = bots.filter((b) => b.id !== botId);
+    setBots(updatedBots);
+  };
+  
+
+  const goBackToListView = () => {
+    setSelectedBot(null);
+  };
+
