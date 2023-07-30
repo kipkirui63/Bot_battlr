@@ -65,3 +65,8 @@ const App = () => {
     setSelectedBot(null);
   };
 
+
+  const showBotSpecs = (bot) => {
+    setSelectedBot(bot);
+  };
+
