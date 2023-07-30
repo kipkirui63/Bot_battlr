@@ -12,6 +12,15 @@ const App = () => {
   const [sortBy, setSortBy] = useState('name');
   const [selectedBot, setSelectedBot] = useState(null);
 
+
+  useEffect(() => {
+    // Fetch data from the API
+    fetch('http://localhost:3000/bots')
+      .then((response) => response.json())
+      .then((data) => setBots(data))
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
+
   const enlistBot = (bot) => {
     if (!army.some((b) => b.bot_class === bot.bot_class)) {
       setArmy([...army, bot]);
@@ -25,3 +34,4 @@ const App = () => {
     const updatedArmy = army.filter((b) => b.id !== bot.id);
     setArmy(updatedArmy);
   };
+
