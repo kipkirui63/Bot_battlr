@@ -20,3 +20,8 @@ const App = () => {
       alert(`You can only enlist one bot from the ${bot.bot_class} class.`);
     }
   };
+
+  const releaseBot = (bot) => {
+    const updatedArmy = army.filter((b) => b.id !== bot.id);
+    setArmy(updatedArmy);
+  };
