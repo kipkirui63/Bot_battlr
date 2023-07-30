@@ -35,3 +35,23 @@ const App = () => {
     setArmy(updatedArmy);
   };
 
+
+  const dischargeForever = (bot) => {
+    // Send a DELETE request to the backend API to remove the bot permanently.
+    fetch(`http://localhost:3000/bots/${bot.id}`, {
+      method: 'DELETE',
+    })
+      .then((response) => {
+        if (response.ok) {
+          // If the DELETE request was successful, update the frontend state.
+          const updatedBots = bots.filter((b) => b.id !== bot.id);
+          const updatedArmy = army.filter((b) => b.id !== bot.id);
+          setBots(updatedBots);
+          setArmy(updatedArmy);
+        } else {
+          throw new Error('Failed to delete the bot from the backend.');
+        }
+      })
+      .catch((error) => console.error('Error deleting the bot:', error));
+  };
+
