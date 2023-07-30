@@ -80,3 +80,24 @@ const App = () => {
     }
   });
 
+  return (
+    <div className="App">
+      {selectedBot ? (
+        <BotSpecs bot={selectedBot} goBackToListView={goBackToListView} enlistBot={enlistBot} />
+      ) : (
+        <>
+          <YourBotArmy army={army} releaseBot={releaseBot} dischargeForever={dischargeForever} />
+          <BotFilterSort
+            filterBy={filterBy}
+            sortBy={sortBy}
+            onFilterChange={setFilterBy}
+            onSortChange={setSortBy}
+          />
+          <BotCollection bots={filteredAndSortedBots} showBotSpecs={showBotSpecs}  enlistBot={enlistBot}/>
+        </>
+      )}
+    </div>
+  );
+};
+
+export default App;
