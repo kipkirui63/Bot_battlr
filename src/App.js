@@ -11,3 +11,12 @@ const App = () => {
   const [filterBy, setFilterBy] = useState('');
   const [sortBy, setSortBy] = useState('name');
   const [selectedBot, setSelectedBot] = useState(null);
+
+  const enlistBot = (bot) => {
+    if (!army.some((b) => b.bot_class === bot.bot_class)) {
+      setArmy([...army, bot]);
+      removeBotFromCollection(bot.id);
+    } else {
+      alert(`You can only enlist one bot from the ${bot.bot_class} class.`);
+    }
+  };
