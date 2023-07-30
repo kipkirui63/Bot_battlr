@@ -70,3 +70,13 @@ const App = () => {
     setSelectedBot(bot);
   };
 
+  const filteredAndSortedBots = bots
+  .filter((bot) => (filterBy ? bot.bot_class === filterBy : true))
+  .sort((a, b) => {
+    if (sortBy === 'name') {
+      return a.name.localeCompare(b.name);
+    } else {
+      return b[sortBy] - a[sortBy];
+    }
+  });
+
