@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+###
+Bot Battlr App
+The Bot Battlr App is a web application built with React that allows users to create an army of bots, view bot profiles, enlist bots, and manage their bot army.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+##
+Core Features
+1. Bot Collection: Users can see a collection of all available bots in a table. Each bot's profile includes information such as their name, health, damage, armor, class, catchphrase, and an avatar image.
 
-In the project directory, you can run:
 
-### `npm start`
+2. Your Bot Army: The app provides a section where users can view their enlisted bot army. Enlisted bots are displayed in a separate table, showing their profiles and the option to release or discharge them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Enlist Bots: Users can click on a bot in the Bot Collection to enlist it in their bot army. Once enlisted, the bot is added to the Your Bot Army section. Each bot can only be enlisted once.
 
-### `npm test`
+4. Release Bot: In Your Bot Army, users can choose to release a bot from their army. This action removes the bot from the army but keeps it in the Bot Collection.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Discharge Forever: Users have the option to discharge a bot from their service permanently. This action deletes the bot both from the backend and from the Your Bot Army section.
 
-### `npm run build`
+Advanced Features
+1. Bot Specs: Users can click on a bot in the Bot Collection to view detailed specifications of that bot. The Bot Specs view replaces the Bot Collection temporarily and includes options to go back to the list view or enlist the bot.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Sort Bots: The app provides a SortBar component where users can sort the bots in the Bot Collection based on health, damage, or armor.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Filter Bots by Class: Users can apply filters to view bots based on their class. Multiple filters can be selected simultaneously.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. One Bot Per Class Limit: Users can only enlist one bot from each bot class (e.g., Support, Medic, Assault, Defender, Captain, Witch).
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+###
+Technologies Used
+- React: JavaScript library for building user interfaces.
+- CSS: Used for styling and layout of the application.
+- npm: Package manager for Node.js.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+###
+Installation
+1. Clone this repository to your local machine:
+   ```
+   git clone https://github.com/kipkirui63.Bot-battlr.git
+   cd your-repo
+   ```
+2. Install the required dependencies:
+   ```
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Usage
+To start the development server and run the application, use the following command:
+```
+npm start
+```
+The application will be accessible at http://localhost:3000.
 
-## Learn More
+Users can view the Bot Collection, enlist bots, view their bot army, release or discharge bots, and use the advanced features to sort and filter bots based on their preferences.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Author
+Your Name (Replace with your name or GitHub username)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+(Note: Please replace "your-username" and "your-repo" with your actual GitHub username and repository name where the Bot Battlr App code is located.)
