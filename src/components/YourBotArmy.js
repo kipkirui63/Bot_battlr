@@ -18,7 +18,7 @@ const YourBotArmy = ({ army, releaseBot, dischargeForever }) => {
           <button onClick={() => dischargeForever(bot)}><span role="img" aria-label="discharge-icon">
               ❌
             </span>Discharge Forever</button>
-        {/* button */}
+        
         </div>
       ))}
     </div>
