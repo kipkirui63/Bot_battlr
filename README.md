@@ -59,6 +59,6 @@ Author
 Your Name (Replace with your name or GitHub username)
 
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License 
 
 (Note: Please replace "your-username" and "your-repo" with your actual GitHub username and repository name where the Bot Battlr App code is located.)
